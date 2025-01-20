@@ -19,9 +19,9 @@ const EditContact = () => {
   useEffect(() => {
     const fetchContact = async () => {
       try {
-        const result = await getContactById(id); // Assume getContactById is an API function
+        const result = await getContactById(id);
         if (result.status >= 200 && result.status < 300) {
-          setContactDetails(result.data); // Assuming result.data contains the contact object
+          setContactDetails(result.data); 
         } else {
           alert("Failed to fetch contact details");
           navigate('/');
@@ -34,6 +34,7 @@ const EditContact = () => {
   
     if (id) fetchContact();
   }, [id, navigate]);
+  
 
   const handleUpdate = async () => {
     const { Name, email, number } = contactDetails;

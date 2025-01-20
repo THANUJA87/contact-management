@@ -1,3 +1,3 @@
-const SERVERURL ="http://localhost:3000"
+const SERVERURL ="https://contact-server-7jvb.onrender.com"
 
 export default SERVERURL

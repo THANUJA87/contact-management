@@ -65,7 +65,7 @@ const ContactList = () => {
           allContact?.length>0 ? 
           allContact.map(contact =>(
 
-           <Col sm={12} md={6} lg={3}className='ms-5 text-center' >
+           <Col sm={12} md={6} lg={3}className='ms-5 text-center mb-3' >
             <Card border='primary' style={{ width: '18rem' }}>
             <Card.Header> <img  width={'50px'} src={user} alt="" /> </Card.Header>
             <Card.Body>
